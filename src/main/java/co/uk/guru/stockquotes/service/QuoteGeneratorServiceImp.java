@@ -14,6 +14,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.BiFunction;
 
+/**
+ * The type Quote generator service imp.
+ */
 @Service
 public class QuoteGeneratorServiceImp implements QuoteGeneratorService {
 
@@ -21,6 +24,9 @@ public class QuoteGeneratorServiceImp implements QuoteGeneratorService {
     private final Random random = new Random();
     private final List<Quote> prices = new ArrayList<>();
 
+    /**
+     * Instantiates a new Quote generator service imp.
+     */
     public QuoteGeneratorServiceImp() {
         this.prices.add(new Quote("AAPL", 160.16));
         this.prices.add(new Quote("MSFT", 77.74));
